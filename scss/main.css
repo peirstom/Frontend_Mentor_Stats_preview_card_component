@@ -1,0 +1,89 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: auto;
+  padding: 0;
+  background-color: #090b1a;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+  margin-bottom: 12px;
+  letter-spacing: 2.5px;
+}
+
+.container {
+  margin-top: 177px;
+}
+
+.card {
+  width: 1110px;
+  border-radius: 10px;
+  height: 446px;
+  margin: auto;
+  background-color: #1b1938;
+  overflow: hidden;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+.card-content {
+  width: 570px;
+  margin-left: 70px;
+  margin-top: 75px;
+  margin-right: 75px;
+}
+
+.card-text {
+  margin-right: 30px;
+  margin-top: 30px;
+  margin-bottom: 80px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.card-image {
+  width: 540px;
+}
+
+.stats {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.soft-violet {
+  color: #aa5cdb;
+}
+
+.img-overlay {
+  background: #aa5cdb;
+}
+
+.img {
+  opacity: .6;
+}
+/*# sourceMappingURL=main.css.map */

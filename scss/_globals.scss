@@ -1,0 +1,28 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: auto;
+    padding: 0;
+    background-color: $veryDarkBlue;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    color: $slightlyTransparentWhite;
+}
+
+h1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    color: $white;
+    margin: 0;
+    margin-bottom: 12px;
+    letter-spacing: 2.5px;
+}

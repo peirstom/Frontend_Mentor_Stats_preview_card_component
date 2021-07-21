@@ -1,0 +1,62 @@
+@import "variables";
+@import "globals";
+
+.container {
+    margin-top: 177px;
+}
+
+.card {
+    width: 1110px;
+    border-radius: 10px;
+    height: 446px;
+    // margin: 0;
+    margin: auto;
+    background-color: $darkDesaturatedBlue;
+    overflow: hidden;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+.card-content {
+    width: 570px;
+    margin-left: 70px;
+    margin-top: 75px;
+    margin-right: 75px;
+}
+
+.card-text {
+    margin-right: 30px;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    color: $slightlyTransparentWhite;
+}
+
+.card-image {
+    width: 540px;
+}
+
+.stats {
+    color: $slightlyTransparentWhiteStatHeading;
+}
+
+.soft-violet{
+    color: $softViolet;
+}
+
+.img-overlay{
+    background: $softViolet;
+    // opacity: .5;
+    // overflow: hidden;
+}
+
+.img{
+    // object-fit: cover;
+    opacity: .6;
+}
