@@ -98,7 +98,8 @@ h1 {
 }
 
 .img {
-  opacity: 0.6;
+  mix-blend-mode: multiply;
+  opacity: 0.8;
 }
 
 @media all and (max-width: 1110px) {
