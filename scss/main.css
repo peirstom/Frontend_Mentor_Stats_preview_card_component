@@ -29,35 +29,50 @@ h1 {
   letter-spacing: 2.5px;
 }
 
-.container {
-  margin-top: 177px;
+@media (max-width: 69.375em) {
+  .hide-for-mobile {
+    display: none;
+  }
 }
 
-.card {
-  width: 1110px;
+@media (min-width: 69.4375em) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: row-reverse wrap;
+          flex-flow: row-reverse wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  max-width: 1110px;
   border-radius: 10px;
-  height: 446px;
-  margin: auto;
+  max-height: 446px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 177px;
+  margin-bottom: 177px;
   background-color: #1b1938;
   overflow: hidden;
 }
 
-.row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.card-content {
+  margin-top: 75px;
+  margin-left: 70px;
+  margin-right: 75px;
+  max-width: 400px;
 }
 
-.column {
+.stats-column {
   float: left;
   width: 33.33%;
-}
-
-.card-content {
-  width: 570px;
-  margin-left: 70px;
-  margin-top: 75px;
-  margin-right: 75px;
 }
 
 .card-text {
@@ -65,10 +80,6 @@ h1 {
   margin-top: 30px;
   margin-bottom: 80px;
   color: rgba(255, 255, 255, 0.75);
-}
-
-.card-image {
-  width: 540px;
 }
 
 .stats {
@@ -81,9 +92,39 @@ h1 {
 
 .img-overlay {
   background: #aa5cdb;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .img {
-  opacity: .6;
+  opacity: 0.6;
+}
+
+@media all and (max-width: 1110px) {
+  .flex-container {
+    max-width: 654px;
+    max-height: -webkit-fit-content;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .card-content {
+    margin-top: 75px;
+    margin-left: 30px;
+    margin-right: 30px;
+    max-width: 100%;
+    text-align: center;
+  }
+  .img {
+    height: 100%;
+  }
+  .stats-column {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

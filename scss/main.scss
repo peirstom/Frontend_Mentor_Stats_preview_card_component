@@ -1,34 +1,32 @@
+@import "mixins";
 @import "variables";
 @import "globals";
 
-.container {
-    margin-top: 177px;
-}
-
-.card {
-    width: 1110px;
-    border-radius: 10px;
-    height: 446px;
-    // margin: 0;
-    margin: auto;
-    background-color: $darkDesaturatedBlue;
-    overflow: hidden;
-}
-
-.row {
+.flex-container {
     display: flex;
-}
-
-.column {
-    float: left;
-    width: 33.33%;
+    flex-flow: row-reverse wrap;
+    justify-content: flex-start;
+    max-width: 1110px;
+    border-radius: 10px;
+    max-height: 446px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 177px;
+    margin-bottom: 177px;
+    background-color: $darkDesaturatedBlue;
+    overflow: hidden;    
 }
 
 .card-content {
-    width: 570px;
-    margin-left: 70px;
     margin-top: 75px;
+    margin-left: 70px;
     margin-right: 75px;
+    max-width: 400px;
+}
+
+.stats-column {
+    float: left;
+    width: 33.33%;
 }
 
 .card-text {
@@ -38,25 +36,46 @@
     color: $slightlyTransparentWhite;
 }
 
-.card-image {
-    width: 540px;
-}
-
 .stats {
     color: $slightlyTransparentWhiteStatHeading;
 }
 
-.soft-violet{
+.soft-violet {
     color: $softViolet;
 }
 
-.img-overlay{
+.img-overlay {
     background: $softViolet;
-    // opacity: .5;
-    // overflow: hidden;
+    width: fit-content;
 }
 
-.img{
-    // object-fit: cover;
-    opacity: .6;
+.img {
+    opacity: 0.6;
+}
+
+@media all and (max-width: 1110px) {
+    .flex-container {
+        max-width: 654px;
+        max-height: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        align-content: center;
+        
+    }
+    .card-content {
+        margin-top: 75px;
+        margin-left: 30px;
+        margin-right: 30px;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .img {
+        height: 100%;
+    }
+
+    .stats-column {
+        width: 100%;
+        margin-bottom: 30px;
+    }
 }
